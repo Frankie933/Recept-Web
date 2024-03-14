@@ -1,0 +1,287 @@
+
+* 
+{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.main-contact{
+    position: relative;
+    width: 300px;
+    height: auto;
+    margin:100px auto;
+    border: 5px solid #35586b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #007bff;
+    padding-bottom: 20px;
+    border-radius: 10px;
+  }
+
+body
+{
+    display: flex; 
+    padding-top: 0px;
+    padding-right: 0px;
+    min-height: 100vh;
+    background: #e7ecf1;
+    margin: 0px;
+    flex-direction: column;
+    margin-top: 0px;
+}
+
+header
+{
+    background-color:  #007bff;
+    display: flex;
+    padding-left: 0%;
+    width: 100%;
+    height: 300px;
+    padding-right: 28px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    align-items:center;
+    flex-direction: row-reverse;
+    align-content: space-between;
+    flex-wrap: wrap; 
+}
+.menu 
+{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.rubrik{
+ flex-grow: 1;
+ text-align: center;
+}
+
+/*Sökrutans Style*/
+.sokfälte{
+    display: flex;
+    flex-grow: 1;
+    align-items:center;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.sok-funktion{
+    width: 75%;
+    max-width: 500px;
+    height: 50px;
+    display:flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px 10px 20px;
+    backdrop-filter: blur(4px) saturate(180%);
+    background: #58629b;
+    margin-bottom: 30px;
+}
+.sok-funktion input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 15px 0px;
+    font-size: 14px;
+    color: #00b3a4;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+
+}
+::placeholder{  
+    color: #cac7ff;
+}
+
+.sok-funktion button{
+    border: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 40px;
+    background: #58629b;
+
+}
+
+/*Style för menyn*/
+.menu li 
+{
+    position: absolute;
+    left: 0; 
+    list-style: none;
+    transform-origin: 130px;
+    transition: 0.5s;
+    transition-delay: calc(0.1s * var(--i));
+    transform: rotate(0deg) translateX(100px);
+
+}
+
+.menu.active li 
+{
+    transform: rotate(calc(360deg / 8 * var(--i)));
+
+}
+
+.menu li a
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    font-size: 1.5em;
+    border-radius: 50%;
+    color: #fff;
+    transform: rotate(calc(360deg / -8 * var(--i)));
+    color: transparent;
+    transition: 1s;
+    transition-delay: 0.5;
+}
+
+.menu.active li a
+{
+    color: var(--clr);
+
+}
+
+.menu li a::before
+{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--clr);
+    transform: rotate(calc(var(--i)* 90deg)) translate(0,25px);
+    transition: height 0.5s, width 0.5s, transform 0.5s;
+    transition-delay: 0s,0s,0s;
+
+}
+
+.menu.active li a::before
+{
+    width: 60px;
+    height: 60px;
+    border: 2px solid var(--clr);
+    box-sizing: border-box;
+    background: #2f363e;;
+    transform: rotate(calc(var(--i)* 90deg)) translate(0px,0px);
+    transition: transform 0.5s, height 0.5s, width 0.5s;
+    transition-delay: 1s,1.5s,1.5s;
+    rotate: 135deg;
+}
+
+.menu.active li:hover a::before{
+
+    background: var(--clr);
+    color: #2f363e;
+    box-shadow: 0 0 10px var(--clr),
+    0 0 30px var(--clr),
+    0 0 50px var(--clr);
+}
+
+
+.menu li a::after{
+    content: '';
+    position: absolute;
+    left: 50px;
+    width: 20px;
+    height: 2px;
+    background: var(--clr);
+    z-index: -1;
+    transform: rotate(calc(var(--i) * 0deg)) translate(15px,0px);
+    transition: 0.5s;
+    transition-delay: 0.5s;   
+}
+.menu.active li a::after{
+    left: 10px;
+    width: 40px;
+    transition-delay: 0.5;
+    transform: rotate(calc(var(--i) * 45deg)) translate(50px,0px);
+
+}
+
+
+.menu.active li:hover a ion-icon
+{
+    position: relative;
+    color: #2f363e;
+    z-index: 100000;
+
+}
+.menuToggle
+{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 2em;
+    transition: transform 1.5s;
+}
+
+.menu.active .menuToggle
+{
+    transform: rotate(360deg);
+
+}
+
+/*Style för knapparna där våra namn står*/
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65vh; 
+    
+}
+
+.button {
+    padding: 15px 30px; 
+    margin: 50px; 
+    border: none;
+    border-radius: 25px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.secondary {
+    background-color: #49a539;
+    color: #fff;
+}
+
+.button:hover {
+    background-color: #00b3a4; 
+    transform: scale(1.1); 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); 
+}
+
+@media only screen and (max-width: 650px) {
+    header {
+      height: 450px; 
+    }
+    .menu{
+        margin-left: 110px;
+   
+    }
+  }

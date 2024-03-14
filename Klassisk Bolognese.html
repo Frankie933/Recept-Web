@@ -1,0 +1,217 @@
+<!--Utgå från Margit-->
+<!--Frank Nihad-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klassik Bolognese</title>
+    <link rel="stylesheet" href="frank.css">
+    <link rel="stylesheet"  type= "text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<!--Recept sidan-->
+<body>
+        <header>
+            <div class="rubrik"><h1>Mat.nu</h1></div>
+
+            <!--Menyn-->
+        <ul class="menu">
+        <div class= "menuToggle"><ion-icon name="menu-outline"></ion-icon></div>
+        <li style="--i:0;--clr:#ff2972;">
+        <a href="start-sidan.html" title="Home page"><ion-icon name="home-outline"></ion-icon></a>
+        </li>
+        <li style="--i:1;--clr:#fee800;">
+        <a href="#"><ion-icon name="person-outline" title="Logga in"></ion-icon></a>
+        </li>
+        <li style="--i:2;--clr:#04fc43;">
+        <a href="#"><ion-icon name="settings-outline"></ion-icon></a>
+        </li>
+        <li style="--i:3;--clr:#fe00f1;">
+        <a href="kontakta.html" title="Kontakta oss"><ion-icon name="mail-outline"></ion-icon></a>
+        </li>
+        <li style="--i:4;--clr:#00b0fe;">
+        <a href="#"><ion-icon name="key-outline"></ion-icon></a>
+        </li>
+        <li id="playButton"  style="--i:5;--clr:#fea600;">
+            <a href="#" title="Markera en text för att spela upp ljudet"><ion-icon name="volume-medium-outline"></ion-icon></a>
+            </li>
+        <li style="--i:6;--clr:#a529ff;">
+        <a href="https://www.google.se/?hl=sv" title="Sök recept på google"><ion-icon name="search-outline"></ion-icon></ion-icon></a>
+        </li>
+        <li style="--i:7;--clr:#01bdab;">
+        <a href="#"><ion-icon name="camera-outline"></ion-icon></a>
+        </li>
+        </ul>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0
+        /dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0
+        /dist/ionicons/ionicons.js"></script>
+        <script>
+            let menuToggle = document.querySelector('.menuToggle');
+            let menu = document.querySelector('.menu');
+            menuToggle.onclick = function(){
+                menu.classList.toggle('active');
+            }
+        
+        </script>
+        <script src="script.js"></script>
+    </header>
+
+    <div class="Recepie-information">
+        <img src="images/klassisk-bolognese-2400x1000.jpg" alt="" class="image1">
+        <h1>Klassik Bolognese </h1>
+        <h2>Tips från Coachen</h2>      
+        <p>Ta lite kött med ägg våga testa dig fram, för att bygga muskler ät mer</p>
+        <h2>Svårighetsgrad</h2>
+        <div class="grader">
+            <div class="grad"></div>
+            <ion-icon name="radio-button-off-outline"></ion-icon>
+            <ion-icon name="radio-button-off-outline"></ion-icon>
+            <ion-icon name="radio-button-off-outline"></ion-icon>
+            <ion-icon name="radio-button-off-outline"></ion-icon>
+            <ion-icon name="radio-button-on-outline"></ion-icon>
+         </div>
+
+    </div>
+    <p class="Descraption">Gör en extra stor sats av allas vardagsfavorit, spagetti och köttfärssås, och frys in.
+         Vill du variera smaken, prova med lamm- eller viltfärs istället för nötfärs! 
+        </p>
+         
+         <div class="recept-tid-beskrivning">
+            <h2>Förberedelsetid</h2>
+            <ul>
+                <li><span>Totalt</span>: Ungefär 10 minuter</li>
+                <li><span>Förbredelse</span>: 10 minuter</li>
+                <li><span>Lagning</span>: 10 minuter</li>
+
+            </ul>
+         </div>
+         <br>
+         <div class="ingredients">
+            <h2>ingredienser</h2>
+            <ul class="ingredients">
+                <li><span>Nötfärs&nbsp;&nbsp;    100 g</span></li>
+                <li><span>Gul lök&nbsp;&nbsp;¼</span></li> 
+                <li><span>Vitlöksklyfta&nbsp;&nbsp;½</span></li>
+                <li><span>Morot&nbsp;&nbsp;¼</span></li>
+                <li><span>Blekselleri&nbsp;&nbsp;⅛ stjälk</span></li>
+                <li><span>Svenskt Smör från Arla®&nbsp;&nbsp; 3⅛ </span></li>
+                <li><span>Färsk oregano&nbsp;&nbsp; ⅛ tsk</span></li>
+                <li><span>Tomatpuré &nbsp;&nbsp;0,1 dl</span></li>
+                <li><span>Salt&nbsp;&nbsp;0,1 msk</span></li>
+                <li><span>Svartpeppa &nbsp;&nbsp; ⅛ tsk</span></li>
+                <li><span>Krossade tomater à 400 g&nbsp;&nbsp; ¼ burk</span></li>
+                <li><span>Arla Ko® standardmjölk&nbsp;&nbsp; ¼ dl</span></li>
+            </ul>
+         </div>
+         <hr>
+         <div class="recepie-step">
+            <br>
+            <h2>Gör såhär:</h2>
+            <div class="Instructions">
+                <div class="item">1.</div>
+                <p><span>Skala lök, vitlök och morötter. </span>Hacka lök, vitlök, morot och blekselleri fint. 
+                    Fräs grönsakshacket i hälften av smöret i en stor gryta ca 10 min utan att det tar färg,
+                    tillsätt oregano.
+                </p>
+            </div>
+            <br>
+            <div class="item">2.</div>
+            <p><span>Bryn färsen i omgångar med tomatpuré i resten av smöret i en stekpanna.</span>: Tillsätt färsen i grytan, salta och peppra.
+            </p>
+            <br>
+            <div class="item">3.</div>
+            <p><span>Rör ner krossade tomater och mjölk.</span>:  Tillsätt färsen i grytan, salta och peppra.
+            </p>
+
+            <div class="rating">
+                <div class="rating-text">Betyg</div>
+                 <input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
+                 <input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
+                 <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
+                 <input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
+                 <input type="radio" id="star5" name="rating" value="5"><label for="star5"></label>
+             </div>
+        </div>
+    </div>
+ </div>
+</div>
+
+<hr>
+    <div class="nutrition-step">
+        <h2>Innehållförtäckning</h2>
+        <p class="value">Tabellen visar innehållsförtäckning</p>
+
+        <div class="nutrition-table">
+            <div class="item">
+                <p>Kalories</p>
+                <p class="amount">340 kcal</p>
+            </div>
+            <div class="item">
+                <p>Kolhydrater</p>
+                <p class="amount">9 g</p>
+            </div>
+            <div class="item">
+                <p>Protein</p>
+                <p class="amount">23 g</p>
+            </div>
+            <div class="item">
+                <p>Fett</p>
+                <p class="amount">24 g</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Affiliate program</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+            <h4>Get help</h4>
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Upload Recipe</a></li>
+                <li><a href="#">Influencer</a></li>
+                <li><a href="#">Cooks Tips</a></li>
+                <li><a href="#">Donate food</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+        <h4>Online shop</h4>
+        <ul>
+            <li><a href="https://www.matsmart.se/">Buy Ingredints online</a></li>
+            <li><a href="https://www.ica.se/recept/snabb/middag/">Buy Fast food</a></li>
+            <li><a href="https://www.foodora.se/">Foodora</a></li>
+            <li><a href="https://wolt.com/sv/swe">Wolt</a></li>
+        </ul>
+    </div>
+    <div class="footer-col">
+    <h4>Follow Frank Nihad</h4>
+    <div class="socials-links">
+    <ul>
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></li></i></a>
+        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/Frankie933"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/frank-nihad-8ab3b3143/"><i class="fab fa-linkedin"></i></a>
+    </ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+    </footer>
+   
+    
+</body>
+</html>

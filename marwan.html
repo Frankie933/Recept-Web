@@ -1,0 +1,139 @@
+<!--Utgår från Margit-->
+<!--Marwan-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marwan</title>
+    
+    <link rel="stylesheet" href="marwan.css">
+
+</head>
+<body >
+    <header>
+        <div class="rubrik"><h1>Mat.nu</h1></div>
+    <ul class="menu">
+    <div class= "menuToggle"><ion-icon name="menu-outline"></ion-icon></div>
+    <li style="--i:0;--clr:#ff2972;">
+    <a href="start-sidan.html" title="Home page"><ion-icon name="home-outline"></ion-icon></a>
+    </li>
+    <li style="--i:1;--clr:#fee800;">
+    <a href="#"><ion-icon name="person-outline" title="Logga in"></ion-icon></a>
+    </li>
+    <li style="--i:2;--clr:#04fc43;">
+    <a href="#"><ion-icon name="settings-outline"></ion-icon></a>
+    </li>
+    <li style="--i:3;--clr:#fe00f1;">
+    <a href="kontakta.html" title="Kontakta oss"><ion-icon name="mail-outline"></ion-icon></a>
+    </li>
+    <li style="--i:4;--clr:#00b0fe;">
+    <a href="#"><ion-icon name="key-outline"></ion-icon></a>
+    </li>
+    <li id="playButton"  style="--i:5;--clr:#fea600;">
+        <a href="#" title="Märkera en text för att spela upp ljudet"><ion-icon name="volume-medium-outline"></ion-icon></a>
+        </li>
+    <li style="--i:6;--clr:#a529ff;">
+    <a href="https://www.google.se/?hl=sv" title="Sök recept på google"><ion-icon name="search-outline"></ion-icon></a>
+    </li>
+    <li style="--i:7;--clr:#01bdab;">
+    <a href="#"><ion-icon name="camera-outline"></ion-icon></a>
+    </li>
+    </ul>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0
+    /dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0
+    /dist/ionicons/ionicons.js"></script>
+    <script>
+        let menuToggle = document.querySelector('.menuToggle');
+        let menu = document.querySelector('.menu');
+        menuToggle.onclick = function(){
+            menu.classList.toggle('active');
+        }
+    
+    </script>
+
+    <!--Menyn för mindre skärmar-->
+  <div class="button-container">
+    <a class="button" href="start-sidan.html" title="Home page"><ion-icon name="home-outline"></ion-icon></a>
+    <a class="button" href="kontakta.html" title="Kontakta oss"><ion-icon name="mail-outline"></ion-icon></a>
+    <a class="button" href="#" title="Märkera en text för att spela upp ljudet"><ion-icon name="volume-medium-outline"></ion-icon></a>
+    <a class="button" href="https://www.google.se/?hl=sv" title="Sök recept på google"><ion-icon name="search-outline"></ion-icon></a>
+  </div>
+</header>
+
+<div class="image-container">
+
+    <div class="image-item">
+        
+        <img src="images/sambosa1.jpg" alt="Bild 1" width="270">
+        
+        <a href="sambosa.html" target="_self" title="Gå till receptet">
+        <div class="image-description"><h1>Sambosa</h1>
+            <p>Recept</p>
+
+            </div></a>
+    </div>
+    <div class="image-item">
+        <img src="images/sambosa.jpg" alt="Sambosa 2" width="270">
+        <a href="sambosa.html" target="_self" title="Gå till receptet">
+        <div class="image-description"><h1>Sambosa</h1>
+            <p>Recept</p>
+        </div></a>
+    </div>
+    <div class="image-item">
+        <img src="images/sambosa3.jpg" alt="Sambosa 3" width="270">
+        <a href="sambosa.html" target="_self" title="Gå till receptet">
+        <div class="image-description"><h1>Sambosa</h1>
+            <p>Recept</p>
+        </div></a>
+    </div>
+
+    <div class="image-item">
+        <img src="images/sambosa4.webp" alt="Sambosa 4" width="270">
+        <a href="sambosa.html" target="_self" title="Gå till receptet">
+        <div class="image-description"><h1>Sambosa</h1>
+            <p>Recept</p>
+        </div></a>
+    </div>
+    <div class="image-item">
+        <img src="images/Sambosa-Zofias-kok-1-1.jpeg" alt="Sambosa 5" width="270">
+        <a href="sambosa.html" target="_self" title="Gå till receptet">
+        <div class="image-description"><h1>Sambosa</h1>
+            <p>Recept</p>
+        </div></a>
+    </div>
+    <div class="image-item" >
+        <img src="images/sambosa.jpg" alt="sambosa 6" width="270">
+        <a href="sambosa.html" target="_self" title="Gå till receptet">
+        <div class="bild6"> <div class="image-description"><h1>Sambosa</h1>
+            <p>Recept</p>
+        </div></a>
+    </div>
+        
+    </div>
+
+    
+</div>
+<footer>
+    
+    <p>Följ Utvecklaren Marwan På sociala Medier:</p>
+    <a href="https://github.com/Marwanrgf" target="_self">GitHub</a>
+    <a href="https://www.linkedin.com/in/marwan-sheikh-918890290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+     target="_self">Linked In
+    </a>
+    <a href="https://www.linkedin.com/in/marwan-sheikh-918890290?utm_source=share&utm_campaign=share_v
+    ia&utm_content=profile&utm_medium=ios_app"
+    target="_parent">Instagram
+    </a>
+   
+        <a href="https://www.linkedin.com/in/marwan-sheikh-918890290?utm_source=share&utm_
+        campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_self">
+            <ion-icon class="icon" name="logo-linkedin" title="LinkedIn"></ion-icon>
+        </a>
+        
+</footer>
+
+<script src="script.js"></script>
+    </body>
+    </html>
